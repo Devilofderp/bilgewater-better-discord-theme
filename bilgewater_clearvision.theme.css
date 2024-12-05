@@ -1,0 +1,100 @@
+
+/**
+ * @name Bilgewater Theme
+ * @author YourName
+ * @version 1.0.0
+ * @description A Bilgewater-inspired theme for BetterDiscord based on ClearVision.
+ * @source https://betterdiscord.app/theme/ClearVision
+ * @website https://github.com/YourUsername/BilgewaterTheme
+ * @updateUrl https://raw.githubusercontent.com/YourUsername/BilgewaterTheme/main/bilgewater.theme.css
+ */
+
+/* Root Variables for Customization */
+:root {
+    --background-image: url('https://wallpaperaccess.com/full/2561569.jpg'); /* Bilgewater-inspired background */
+    --background-overlay: rgba(15, 20, 30, 0.8); /* Overlay to darken the background */
+    --primary-color: #1c2833; /* Container background */
+    --secondary-color: #e58c2c; /* Rusty orange for accents */
+    --highlight-color: #2ecc71; /* Seaweed green for highlights */
+    --text-color: #d1d5db; /* Light gray text */
+    --shadow-color: rgba(0, 0, 0, 0.6); /* Shadow for depth effects */
+    --scrollbar-color: rgba(229, 140, 44, 0.8); /* Custom scrollbar color */
+}
+
+/* Global Background */
+body {
+    background: var(--background-image) no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+}
+
+/* Background Overlay */
+.theme-dark .layer-3QrUeG {
+    background: var(--background-overlay);
+}
+
+/* Sidebar Styling */
+.theme-dark .container-2RRFHK {
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Buttons */
+button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: lighten(var(--secondary-color), 10%);
+    transform: scale(1.05);
+}
+
+/* Links */
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Cards and Containers */
+.card-1Dr98u {
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-overlay);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color);
+    border-radius: 5px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--highlight-color);
+    font-weight: bold;
+    text-shadow: 0 1px 2px var(--shadow-color);
+}
